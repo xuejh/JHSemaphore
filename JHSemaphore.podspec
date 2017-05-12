@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 
   s.name         = "JHSemaphore"
   s.version      = "0.0.2"
-  s.summary      = "A short description of JHSemaphore."
+  s.summary      = "JHSemaphore is a demo for 简化信号量"
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -26,9 +26,12 @@ Pod::Spec.new do |s|
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
 JHSemaphore 是对iOS信号量应用的简单封装
+JHSemaphore 是对iOS信号量应用的简单封装
+JHSemaphore 是对iOS信号量应用的简单封装
+JHSemaphore 是对iOS信号量应用的简单封装
                    DESC
 
-  s.homepage     = "https://github.com/xuejh/JHSemaphore"
+  s.homepage     = "https://github.com/xuejh/JHSemaphore.git"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -80,7 +83,7 @@ s.ios.deployment_target = '6.0'
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/xuejh/JHSemaphore", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/xuejh/JHSemaphore.git", :tag => "#{s.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
