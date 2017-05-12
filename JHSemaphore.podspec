@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "JHSemaphore"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "A short description of JHSemaphore."
 
   # This description is used to generate tags and improve search results.
@@ -26,7 +26,6 @@ Pod::Spec.new do |s|
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
 JHSemaphore 是对iOS信号量应用的简单封装
-
                    DESC
 
   s.homepage     = "https://github.com/xuejh/JHSemaphore"
@@ -73,7 +72,7 @@ JHSemaphore 是对iOS信号量应用的简单封装
   # s.osx.deployment_target = "10.7"
   # s.watchos.deployment_target = "2.0"
   # s.tvos.deployment_target = "9.0"
-
+s.ios.deployment_target = '6.0'
 
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -96,11 +95,8 @@ JHSemaphore 是对iOS信号量应用的简单封装
 # s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
+s.source_files = 'JHSemaphore/**/*.{h,m}'
 
-    s.source_files = 'JHSemaphore/**/*.{h,m}'
-#s.resource_bundles = {
-#   'JHSemaphoreBundle' => [ 'JHSemaphoreBundle/*.{xib,plist,lproj,bundle,json}' ]
-#   }
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
   #  A list of resources included with the Pod. These are copied into the
@@ -134,9 +130,10 @@ JHSemaphore 是对iOS信号量应用的简单封装
   #  where they will only apply to your library. If you depend on other Podspecs
   #  you can include multiple dependencies to ensure it works.
 
-   s.requires_arc = true
+  # s.requires_arc = true
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # s.dependency "JSONKit", "~> 1.4"
-    s.ios.frameworks = "UIKit"
+s.requires_arc = true
+ s.ios.frameworks = "UIKit"
 end
